@@ -1,0 +1,2 @@
+# munkaidonyilvantarto
+Beadandó: Munkaidő nyilvántartó
