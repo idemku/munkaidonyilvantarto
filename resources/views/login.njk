@@ -1,0 +1,36 @@
+{% extends 'master' %}
+
+{% block content %}
+
+  <div class="panel panel-default" style="padding: 5%">
+  <div class="jumbotron" style="padding: 5%">
+
+    <form class="form-horizontal">
+        <fieldset>
+            <div class="form-group">
+                <label for="inputUsername" class="col-lg-2 control-label">Felhasználónév</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="inputUsername" placeholder="Felhasználónév">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputPassword" class="col-lg-2 control-label">Jelszó</label>
+                <div class="col-lg-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Jelszó">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button type="reset" class="btn btn-default">Mégse</button>
+                    <button type="submit" class="btn btn-primary">Bejelentkezés</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+  </div>
+  </div>
+
+{% endblock %}

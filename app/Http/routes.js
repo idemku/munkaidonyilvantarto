@@ -17,5 +17,8 @@
 
 const Route = use('Route')
 
-//Route.on('/').render('welcome')
-Route.get('/', 'MunkaidoController.index')
+Route.on('/').render('welcome')
+Route.get('/index', 'MunkaidoController.index')
+Route.get('/login', 'MunkaidoController.login')
+
+
