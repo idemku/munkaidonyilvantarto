@@ -1,5 +1,20 @@
 # Munkaidő nyilvántartó
 
+## Telepítés
+```
+git clone
+npm install
+```
+### Bejelentkezési adatok
+- Express-admin:
+  - Felhasználónév: a
+  - Jelszó: aaAA11
+- Munkaidő nyilvántartó
+  1. Adminisztrátor: admin@admin.hu: admin
+  2. Vezető: vezeto@vezeto.hu: vezeto
+  3. Munkás1: munkas1@munkas1.hu: munkas1
+  4. Munkás2: munkas2@munkas2.hu: munkas2
+
 ## Funkcionális követelmények
 - Munkavállalóként szeretnék bejelentkezni az oldalra
 - Munkavállalóként szeretnék profiladatokat szerkeszteni

@@ -367,6 +367,7 @@ class LogController {
 
     const id = request.currentUser.id;
     const user = yield User.find(id);
+    
     yield user.related('project').load();
     yield response.sendView('ownUserProjects', {
       projects: user.toJSON()
