@@ -1,5 +1,44 @@
-{% extends 'master' %}
+{% extends "layout" %}
+
+{% block scripts %}
+<script src="/scripts/main.js"></script>
+{% endblock %}
+
 
 {% block content %}
-  Blokk
+<div class="panel panel-default" style="padding: 5%">
+<h1>Projektek</h1>
+<div class="row">
+  {% for project in projects %}
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+       {% if currentUser %}
+      <a href="/projects/{{ project.id}}">
+      {% endif %}
+
+            {{ project.name }}
+             {% if currentUser %}
+        </a>
+        {% endif %}
+        </div>
+      <ul class="list-group">
+        {% for task in project.topTasks %}
+        <li class="list-group-item">
+         {% if currentUser %}
+           <a href="/projects/{{ project.id}}/{{task.id }}">
+           {% endif %}
+            {{ task.name }}
+             {% if currentUser %}
+        </a>
+         {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
+</div>
 {% endblock %}
